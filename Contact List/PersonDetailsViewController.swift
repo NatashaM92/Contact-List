@@ -20,8 +20,6 @@ class PersonDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.backButtonTitle = "back"
         fullnameLabel.text = person.fullname
         phoneLabel.text = "Phone: \(person.phone)"
         emailLabel.text = "Email: \(person.mail)"

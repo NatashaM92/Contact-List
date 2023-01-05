@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EDA06A029676AB1005CDC40 /* PersonsListInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA069F29676AB1005CDC40 /* PersonsListInfoViewController.swift */; };
 		5EDCC4352966F3450028D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCC4342966F3450028D1BA /* AppDelegate.swift */; };
 		5EDCC4372966F3450028D1BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCC4362966F3450028D1BA /* SceneDelegate.swift */; };
 		5EDCC43C2966F3450028D1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDCC43A2966F3450028D1BA /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EDA069F29676AB1005CDC40 /* PersonsListInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListInfoViewController.swift; sourceTree = "<group>"; };
 		5EDCC4312966F3450028D1BA /* Contact List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDCC4342966F3450028D1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EDCC4362966F3450028D1BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				5EDCC44A2966F6650028D1BA /* DataStore.swift */,
 				5EDCC44E296708BB0028D1BA /* PersonListViewController.swift */,
 				5EDCC4502967433E0028D1BA /* PersonDetailsViewController.swift */,
+				5EDA069F29676AB1005CDC40 /* PersonsListInfoViewController.swift */,
 				5EDCC43A2966F3450028D1BA /* Main.storyboard */,
 				5EDCC43D2966F3450028D1BA /* Assets.xcassets */,
 				5EDCC43F2966F3450028D1BA /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				5EDCC4492966F4E10028D1BA /* Person.swift in Sources */,
 				5EDCC4512967433E0028D1BA /* PersonDetailsViewController.swift in Sources */,
 				5EDCC44F296708BB0028D1BA /* PersonListViewController.swift in Sources */,
+				5EDA06A029676AB1005CDC40 /* PersonsListInfoViewController.swift in Sources */,
 				5EDCC44B2966F6650028D1BA /* DataStore.swift in Sources */,
 				5EDCC4372966F3450028D1BA /* SceneDelegate.swift in Sources */,
 			);
