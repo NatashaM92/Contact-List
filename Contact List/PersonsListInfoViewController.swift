@@ -34,12 +34,11 @@ class PersonsListInfoViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             content.text = person.phone
+            content.image = UIImage(systemName: "phone")
         default:
             content.text = person.mail
-            
+            content.image = UIImage(systemName: "mail")
         }
-//        content.text = person.phone
-//        content.text = person.mail
         cell.contentConfiguration = content
         return cell
     }
