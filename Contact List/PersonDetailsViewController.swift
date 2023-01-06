@@ -17,7 +17,6 @@ class PersonDetailsViewController: UIViewController {
     
     var person: Person!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fullnameLabel.text = person.fullname
