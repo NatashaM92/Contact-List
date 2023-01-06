@@ -11,29 +11,23 @@ class TabBarViewController: UITabBarController {
     
     let personList1 = Person.getPerson()
    
-   // let VC = tabBarController?.viewControllers
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let viewControllers = tabBarController?.viewControllers
         viewControllers?.forEach { viewController in
-            if let personListVC = viewController as? PersonListViewController {
-                personListVC.personList = personList1
-            } else if let personListInfoVC = viewController as? PersonsListInfoViewController {
-                personListInfoVC.personList = personList1
+            if let navigationVC = viewController as? UINavigationController {
+                if let personListVC = navigationVC.topViewController as? PersonListViewController {
+                    personListVC.personList = personList1
+                } else if let personListInfoVC = navigationVC.topViewController as? PersonsListInfoViewController {
+                    personListInfoVC.personList = personList1
+                }
+            } else { return
             }
         }
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
