@@ -9,13 +9,13 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    let personList1 = Person.getPerson()
-   
-
+    private let personList1 = Person.getPerson()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let viewControllers = tabBarController?.viewControllers
+        getPersonList()
+    }
+    
+    private func getPersonList() {
         viewControllers?.forEach { viewController in
             if let navigationVC = viewController as? UINavigationController {
                 if let personListVC = navigationVC.topViewController as? PersonListViewController {
@@ -23,11 +23,8 @@ class TabBarViewController: UITabBarController {
                 } else if let personListInfoVC = navigationVC.topViewController as? PersonsListInfoViewController {
                     personListInfoVC.personList = personList1
                 }
-            } else { return
-            }
+            } else { return }
         }
     }
     
-   
-
 }
