@@ -8,17 +8,18 @@
 import UIKit
 
 class PersonListViewController: UITableViewController {
-    let personList = Person.getPerson()
+    var personList: [Person]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
+        
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        personList.count
+        personList.count 
     }
 
 

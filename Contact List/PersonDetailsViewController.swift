@@ -10,9 +10,7 @@ import UIKit
 class PersonDetailsViewController: UIViewController {
     
     @IBOutlet var fullnameLabel: UILabel!
-    
     @IBOutlet var phoneLabel: UILabel!
-    
     @IBOutlet var emailLabel: UILabel!
     
     var person: Person!

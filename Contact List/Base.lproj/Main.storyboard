@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="2303.0534351145038" y="-75.352112676056336"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="lgg-ds-hSR">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p2p-Y4-CWe" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p2p-Y4-CWe" customClass="TabBarViewController" customModule="Contact_List" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CrB-vY-RWK">
                         <autoresizingMask key="autoresizingMask"/>

@@ -27,8 +27,11 @@ struct Person {
         let shuffledPhones = dataStore.phones.shuffled()
         let shuffledMails = dataStore.mails.shuffled()
         
-        for i in 0...9 {
-            let person = Person(name: shuffledNames[i], surname: shuffledSurnames[i], phone: shuffledPhones[i], mail: shuffledMails[i])
+        for index in 0...9 {
+            let person = Person(name: shuffledNames[index],
+                                surname: shuffledSurnames[index],
+                                phone: shuffledPhones[index],
+                                mail: shuffledMails[index])
             persons.append(person)
         }
         return persons
