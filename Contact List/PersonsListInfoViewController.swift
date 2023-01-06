@@ -29,10 +29,17 @@ class PersonsListInfoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personDetails", for: indexPath)
-        let person = personList[indexPath.row]
+        let person = personList[indexPath.section]
         var content = cell.defaultContentConfiguration()
-        content.text = person.phone
-        content.text = person.mail
+        switch indexPath.row {
+        case 0:
+            content.text = person.phone
+        default:
+            content.text = person.mail
+            
+        }
+//        content.text = person.phone
+//        content.text = person.mail
         cell.contentConfiguration = content
         return cell
     }
